@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lingua: learn English step by step, from absolute beginner to proficiency, with lessons, exams and an AI tutor.">
+  <title>Lingua | Learn English from Zero to Fluency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="#top" aria-label="Lingua home">Lingua</a>
+      <nav id="nav" class="nav" aria-label="Main">
+        <a href="#levels" data-i18n="nav_levels">Levels</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#exams" data-i18n="nav_exams">Exams</a>
+        <a href="#pricing" data-i18n="nav_pricing">Plans</a>
+        <a href="#faq" data-i18n="nav_faq">FAQ</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <div class="tools">
+        <button id="langBtn" class="chip" type="button" aria-label="Switch language">বাংলা</button>
+        <button id="themeBtn" class="chip" type="button" aria-label="Toggle dark mode">Dark</button>
+        <button id="menuBtn" class="chip menu" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <div class="hero-text">
+        <h1 data-i18n="hero_title">Learn English from your first word to fluency.</h1>
+        <p class="lead" data-i18n="hero_sub">Eight clear levels, lessons explained in your own language, exams that show where you stand, and a tutor that answers when you are stuck.</p>
+        <div class="actions">
+          <a class="btn primary" href="#quiz" data-i18n="cta_quiz">Try a quick quiz</a>
+          <a class="btn" href="#levels" data-i18n="cta_levels">See the 8 levels</a>
+        </div>
+      </div>
+
+      <div class="quiz" id="quiz" aria-live="polite">
+        <p class="quiz-meta"><span id="qCount">1/5</span> <span id="qScore">0</span> <span data-i18n="correct">correct</span></p>
+        <p class="quiz-prompt" data-i18n="q_prompt">What does this Bengali word mean?</p>
+        <p class="quiz-word" id="qWord" lang="bn">...</p>
+        <div class="options" id="qOptions"></div>
+        <p class="feedback" id="qFeedback" role="status"></p>
+        <button class="btn primary" id="qNext" type="button" hidden data-i18n="next">Next</button>
+      </div>
+    </section>
+
+    <section class="section wrap" id="levels">
+      <h2 data-i18n="levels_title">Eight levels, one clear path</h2>
+      <p class="sub" data-i18n="levels_sub">You finish a level assessment before moving up. CEFR ranges are approximate.</p>
+      <ol class="levels">
+        <li><strong>Absolute Beginner</strong><span>Pre-A1</span></li>
+        <li><strong>Beginner</strong><span>A1</span></li>
+        <li><strong>Elementary</strong><span>A2</span></li>
+        <li><strong>Pre-Intermediate</strong><span>A2 to B1</span></li>
+        <li><strong>Intermediate</strong><span>B1</span></li>
+        <li><strong>Upper-Intermediate</strong><span>B2</span></li>
+        <li><strong>Advanced</strong><span>C1</span></li>
+        <li><strong>Proficiency</strong><span>C2</span></li>
+      </ol>
+    </section>
+
+    <section class="section wrap" id="skills">
+      <h2 data-i18n="skills_title">Practise every skill</h2>
+      <dl class="skills">
+        <div><dt>Grammar</dt><dd>Parts of speech to conditionals, each with rules, examples and common mistakes.</dd></div>
+        <div><dt>Vocabulary</dt><dd>Daily words, flashcards and revision, with pronunciation and example sentences.</dd></div>
+        <div><dt>Speaking</dt><dd>Record yourself, play it back, and rehearse real conversations.</dd></div>
+        <div><dt>Listening</dt><dd>Dictation and comprehension from beginner to advanced audio.</dd></div>
+        <div><dt>Reading</dt><dd>Short stories and articles with word help and questions.</dd></div>
+        <div><dt>Writing</dt><dd>Sentences to essays, with feedback on grammar, spelling and clarity.</dd></div>
+      </dl>
+    </section>
+
+    <section class="section wrap" id="exams">
+      <h2 data-i18n="exams_title">Exams that explain your mistakes</h2>
+      <p class="sub" data-i18n="exams_sub">Timed tests with instant scoring, correct answers, explanations and a history of your attempts. Preparation sections cover IELTS, TOEFL, PTE, Cambridge, Duolingo and Business English.</p>
+      <p class="note" data-i18n="exams_note">Practice scores are estimates. They are not official exam results, and AI feedback on writing is guidance, not a guaranteed grade.</p>
+    </section>
+
+    <section class="section wrap" id="pricing">
+      <h2 data-i18n="pricing_title">Plans</h2>
+      <div class="plans">
+        <article class="plan"><h3>Free</h3><p class="price">0</p><ul><li>Starter lessons</li><li>Daily vocabulary</li><li>Basic quizzes</li></ul></article>
+        <article class="plan featured"><h3>Premium monthly</h3><p class="price" data-i18n="tba">Price to be announced</p><ul><li>All levels and exams</li><li>Full AI tutor access</li><li>Downloadable resources</li></ul></article>
+        <article class="plan"><h3>Premium annual</h3><p class="price" data-i18n="tba">Price to be announced</p><ul><li>Everything in monthly</li><li>Lower yearly cost</li></ul></article>
+      </div>
+      <p class="note" data-i18n="pricing_note">Payments are not active yet. They will be enabled only after a payment gateway is configured.</p>
+    </section>
+
+    <section class="section wrap" id="faq">
+      <h2 data-i18n="faq_title">Questions</h2>
+      <details><summary>Can I learn English through Bengali?</summary><p>Yes. Choose your interface language and your target language separately, so Bengali explanations can teach English.</p></details>
+      <details><summary>Do I need to start at level 1?</summary><p>No. A placement assessment suggests where to begin, and you can start lower if you prefer.</p></details>
+      <details><summary>How is lesson accuracy checked?</summary><p>Every lesson and answer key is reviewed by a person before it is published, and learners can report errors.</p></details>
+    </section>
+
+    <section class="section wrap" id="contact">
+      <h2 data-i18n="contact_title">Contact us</h2>
+      <form id="contactForm" class="form" novalidate>
+        <label>Name<input name="name" type="text" autocomplete="name" required></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required></label>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <p class="form-msg" id="formMsg" role="status"></p>
+        <button class="btn primary" type="submit" data-i18n="send">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap"><p>&copy; <span id="year"></span> Lingua. <span data-i18n="footer">Built for learners.</span></p></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
